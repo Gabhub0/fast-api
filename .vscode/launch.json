@@ -4,14 +4,14 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+
         {
             "name": "Python: archivo actual",
             "type": "python",
             "request": "launch",
             "console": "integratedTerminal",
             "module": "uvicorn",
-            "args": ["main:app","--reaload"]
+            "args": ["main:app","--reload"]
         }
     ]
 }

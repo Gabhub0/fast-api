@@ -2,7 +2,13 @@ from fastapi import FastAPI
 
 app = FastAPI() 
 
-@app.get("/items/{item_id}")
 
-def read_item(item_id: int):
-    return {"item_id":item_id}
+@app.get("/")
+def read_index():
+    return 'Este es el Index'
+
+@app.get("/saludo")
+def read_item():
+    return "Hola, FastAPI"
+
+
